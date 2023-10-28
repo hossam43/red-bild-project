@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+  </head>
+  <body>
+    <header class="header-section">
+      <header class="header">
+        <img src="./assets/images/logo.png" class="logo" alt="website-logo" />
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a href="#about" class="main-nav-link">About us</a></li>
+            <li>
+              <a href="#destination" class="main-nav-link">Destination</a>
+            </li>
+            <li>
+              <a href="#commitment" class="main-nav-link">Our Commitment</a>
+            </li>
+            <li><a href="#clients" class="main-nav-link">Our Clients</a></li>
+            <li>
+              <a href="#destination" class="main-nav-link nav-cta"
+                >Find Destination
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+
+      <section class="hero-section">
+        <div class="hero">
+          <div class="hero-inner-container">
+            <h1 class="heading-primary">
+              Decover your most comfort Place for life
+            </h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              corrupti nostrum animi non inventore.
+            </p>
+            <a href="#" class="cta btn btn--full margin-right-sm"
+              >Start eating well</a
+            >
+            <a href="#about" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="prove-box">
+        <div class="prove-item">
+          <h2 class="prove-title">50+</h2>
+          <p class="margin-top-sm">Project Compleation</p>
+        </div>
+        <div class="prove-item">
+          <h2 class="prove-title">500+</h2>
+          <p class="margin-top-sm">Project Compleation</p>
+        </div>
+        <div class="prove-item">
+          <h2 class="prove-title">500+</h2>
+          <p class="margin-top-sm">Project Compleation</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="experience-section">
+        <div class="container grid grid--2--cols">
+          <div class="experience-content-box">
+            <h2 class="heading-secondary">
+              Your daily health meal in 3 simple stebs
+            </h2>
+            <p class="experience-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              soluta velit inventore dolore corporis! Tenetur, sunt id, aliquam
+              dolorum odit qui amet omnis beatae perferendis dignissimos maiores
+              suscipit, ullam magnam!
+            </p>
+            <ul class="experience-list">
+              <li>
+                <ion-icon
+                  class="check-mark"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+
+              <li>
+                <ion-icon
+                  class="check-mark"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+              <li>
+                <ion-icon
+                  class="check-mark"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Lorem, ipsum dolor.</span>
+              </li>
+            </ul>
+            <button class="btn btn--full">More about us</button>
+          </div>
+          <div class="experience-images-box grid grid--3--cols grid-gap-sm">
+            <div class="img-box">
+              <div class="experience-img-url"></div>
+            </div>
+            <div class="img-box">
+              <div class="experience-img-url"></div>
+            </div>
+            <div class="img-box">
+              <div class="experience-img-url"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="destination" class="destinations-section">
+        <div class="container destination-tilte-box margin-bottom-md">
+          <h2 class="heading-secondary margin-bottom-0">
+            Destination we love the most
+          </h2>
+
+          <div class="next-btn-box">
+            <button class="btn btn--option margin-right-sm">&LeftArrow;</button>
+            <button class="btn btn--option">&RightArrow;</button>
+          </div>
+        </div>
+
+        <div class="destination-grid container grid grid--3--cols">
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+
+          <div class="destination-img-box">
+            <div class="destination-img-url" role="img"></div>
+            <div class="text">
+              <p class="destination-text">Executive office, San Diego</p>
+              <div class="destination-address">
+                <ion-icon name="location-outline" class="icon"></ion-icon>
+                <p class="destination-location">
+                  90071, South Grand Avenue,San Diego
+                </p>
+              </div>
+              <p class="destination-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                dolore libero est fuga deserunt porro dolores saepe quod
+                impedit! Iste molestias libero quas! Deserunt iste harum
+                voluptatem minima hic aperiam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container center-text">
+          <h2 class="heading-secondary">
+            We Help Build on your <br />
+            Past and prepare for the Freature
+          </h2>
+        </div>
+
+        <div class="container steps-box margin-bottom-md">
+          <ul class="steps-list">
+            <li class="step-item active">
+              <a href="" class="step-link">Misson</a>
+            </li>
+            <li class="step-item">
+              <a href="" class="step-link">Vission</a>
+            </li>
+            <li class="step-item">
+              <a href="" class="step-link">Value</a>
+            </li>
+            <li class="step-item">
+              <a href="" class="step-link">Award winning</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="commitment" class="container grid grid--2--cols">
+          <div class="about-content">
+            <h3 class="heading-tertiary">
+              Leading way in Building & Civil Constructions
+            </h3>
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              magnam expedita laudantium dolorem illum ipsa sit nemo, ducimus
+              non soluta consectetur quaerat iusto id voluptates dolores ullam
+              nesciunt. Quisquam, perferendis?
+            </p>
+            <div class="about-list-box">
+              <ul class="about-list">
+                <li class="about-item">
+                  <span><strong> Commercial </strong></span>
+                </li>
+                <li class="about-item">
+                  <span><strong> Commercial </strong></span>
+                </li>
+              </ul>
+              <ul class="about-list">
+                <li class="about-item">
+                  <span><strong> Commercial </strong></span>
+                </li>
+                <li class="about-item">
+                  <span><strong> Commercial </strong></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-video-box">
+            <video class="my-video video-js" data-setup="" controls>
+              <source
+                src="./assets/video/meeting-1280-720.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="testimonials-section">
+        <div
+          class="container center-text testimonials-tilte-box margin-bottom-md"
+        >
+          <h2 class="heading-secondary margin-bottom-0">
+            What out past client say about us
+          </h2>
+
+          <div class="next-btn-box">
+            <button class="btn btn--option margin-right-sm">&LeftArrow;</button>
+            <button class="btn btn--option">&RightArrow;</button>
+          </div>
+        </div>
+
+        <div class="groded">
+          <div
+            class="container grid grid--1-2--cols testimonials grid-center-v"
+          >
+            <div class="testimonials-img-box">
+              <img
+                src="./assets/images/apartment.jpg"
+                alt=""
+                class="testimonials-img"
+              />
+            </div>
+
+            <div class="testimonials-content-box">
+              <ul class="rating-box">
+                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+              </ul>
+
+              <p class="testimonial-heading">
+                "Homefy helped us find an amazing house fir our family"
+              </p>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Praesentium, aperiam, magni, dignissimos quibusdam hic deleniti
+                illum nam voluptate perspiciatis ea numquam optio culpa eveniet
+                quisquam. Odit placeat nulla obcaecati labore!
+              </p>
+
+              <div class="testimonial-author-box">
+                <img
+                  src="./assets/images/person-400.jpg"
+                  class="author-photo"
+                  alt=""
+                />
+                <div class="author-info">
+                  <p class="author-name">Mila Mcsabou</p>
+                  <p class="author-job">Freelance Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--5--cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              src="./assets/images/logo.png"
+              class="footer-logo"
+              alt="website-logo"
+            />
+          </a>
+
+          <p class="footer-dec">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta,
+            nobis.
+          </p>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href=""
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href=""
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href=""
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p>545 Harios St., 2nd Floor, San Francisco, CA</p>
+
+            <p>
+              <a class="footer-link" href="tel:416-201-6370">416-201-6370</a>
+              <br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Sign up</a></li>
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careerers</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container center-text">
+        <p class="copyright">
+          Copyright &copy; 2027 by Omnifood, Inc. All rigths reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
