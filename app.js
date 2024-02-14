@@ -1,3 +1,4 @@
+import { ob } from "./intersectionObserver.js";
 ///////////////////////////////////////////////////////////
 // // Set current year
 // const yearEl = document.querySelector(".year");
@@ -44,3 +45,25 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 /////////////////////////////////////////
+
+// Reveal section
+
+const allSection = document.querySelectorAll(".section--reveal");
+const optionsList = {
+  root: null,
+  threshold: 0.1,
+};
+ob(allSection, "element--hidden", optionsList);
+
+const smoothscrollNav = function (parentClass, childrenClass) {
+  document.querySelector(`.${parentClass}`).addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = e.target.getAttribute("href");
+    console.log(id);
+    if (e.target.classList.contains(childrenClass)) {
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+  });
+};
+
+smoothscrollNav("main-nav", "main-nav-link");

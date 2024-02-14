@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/query.css" />
+    <script defer type="module" src="app.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -30,17 +31,19 @@
         <img src="./assets/images/logo.png" class="logo" alt="website-logo" />
         <nav class="main-nav">
           <ul class="main-nav-list">
-            <li><a href="#about" class="main-nav-link">About us</a></li>
+            <li><a href="#section--1" class="main-nav-link">About us</a></li>
             <li>
-              <a href="#destination" class="main-nav-link">Destination</a>
+              <a href="#section--2" class="main-nav-link">Discover</a>
             </li>
+
             <li>
-              <a href="#commitment" class="main-nav-link">Our Commitment</a>
+              <a href="#section--3" class="main-nav-link">Steps</a>
             </li>
-            <li><a href="#clients" class="main-nav-link">Our Clients</a></li>
+
+            <li><a href="#section--4" class="main-nav-link">Our Clients</a></li>
             <li>
-              <a href="#destination" class="main-nav-link nav-cta"
-                >Find Destination
+              <a href="#section--4" class="main-nav-link nav-cta"
+                >Contact Us
               </a>
             </li>
           </ul>
@@ -55,15 +58,14 @@
         <div class="hero">
           <div class="hero-inner-container">
             <h1 class="heading-primary">
-              Decover your most comfort Place for life
+              Find a place where you can be yourself
             </h1>
             <p class="hero-description">
-              Welcome to our website! We aim to redefine comfort by providing
-              tailored solutions for your lifestyle
+              If you're looking for a place where you can be yourself, don't
+              give up. Keep searching until you find a place that feels like
+              home.
             </p>
-            <a href="#" class="cta btn btn--full margin-right-sm"
-              >Start eating well</a
-            >
+            <a href="#" class="cta btn btn--full margin-right-sm">Find Home</a>
             <a href="#about" class="btn btn--outline">Learn more &darr;</a>
           </div>
         </div>
@@ -84,317 +86,329 @@
         </div>
       </div>
     </header>
+    <div class="warper">
+      <main>
+        <section id="section--1" class="experience-section">
+          <div class="container grid grid--2--cols section--reveal">
+            <div class="experience-content-box">
+              <h2 class="heading-secondary">
+                Your dream home in 3 simple stebs
+              </h2>
+              <p class="experience-description">
+                Indulge in a healthier lifestyle effortlessly with our array of
+                services. We're dedicated to simplifying your daily health
+                choices, ensuring quality, convenience, and satisfaction. Your
+                journey to a healthier you begins here.
+              </p>
+              <ul class="experience-list">
+                <li>
+                  <ion-icon
+                    class="check-mark"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Effortless access to quality health solutions</span>
+                </li>
+                <li>
+                  <ion-icon
+                    class="check-mark"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Convenient lifestyle upgrades for your well-being</span>
+                </li>
+                <li>
+                  <ion-icon
+                    class="check-mark"
+                    name="checkmark-outline"
+                  ></ion-icon>
+                  <span>Personalized services for a healthier you</span>
+                </li>
+              </ul>
+              <button class="btn btn--full">More about us</button>
+            </div>
+            <div class="experience-images-box grid grid--3--cols grid-gap-sm">
+              <div class="img-box">
+                <div class="experience-img-url"></div>
+              </div>
+              <div class="img-box">
+                <div class="experience-img-url"></div>
+              </div>
+              <div class="img-box">
+                <div class="experience-img-url"></div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <main>
-      <section id="about" class="experience-section">
-        <div class="container grid grid--2--cols">
-          <div class="experience-content-box">
-            <h2 class="heading-secondary">
-              Your daily health meal in 3 simple stebs
+        <section id="section--2" class="destinations-section">
+          <div class="container destination-tilte-box margin-bottom-md">
+            <h2 class="heading-secondary margin-bottom-0">
+              Discover Endless Home Possibilities:
+              <span class="sub-heading">Explore Over 1000 Properties!</span>
             </h2>
-            <p class="experience-description">
-              Indulge in a healthier lifestyle effortlessly with our array of
-              services. We're dedicated to simplifying your daily health
-              choices, ensuring quality, convenience, and satisfaction. Your
-              journey to a healthier you begins here.
-            </p>
-            <ul class="experience-list">
-              <li>
-                <ion-icon
-                  class="check-mark"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Effortless access to quality health solutions</span>
+
+            <div class="next-btn-box">
+              <button class="btn btn--option margin-right-sm">
+                &LeftArrow;
+              </button>
+              <button class="btn btn--option">&RightArrow;</button>
+            </div>
+          </div>
+
+          <div
+            class="destination-grid container grid grid--3--cols section--reveal"
+          >
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+                <p class="destination-description">
+                  Discover the fusion of contemporary comforts alongside the
+                  historical significance that defines these remarkable
+                  locations. Your exploration awaits in our diverse
+                  destinations.
+                </p>
+              </div>
+            </div>
+
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+
+                <p class="destination-description">
+                  Delve into our recommended destinations and discover their
+                  unique charm. Each location is a hidden gem, waiting to be
+                  explored, offering a blend of culture, comfort, and
+                  unparalleled experiences.
+                </p>
+              </div>
+            </div>
+
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+                <p class="destination-description">
+                  Experience the allure of our highly recommended locations
+                  where modern comforts and vibrant energy converge. Unwind and
+                  enjoy the perfect blend of relaxation and urban lifestyle in
+                  these handpicked destinations.
+                </p>
+              </div>
+            </div>
+
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+                <p class="destination-description">
+                  Your exploration awaits in our diverse destinations, blending
+                  modernity with heritage. Discover the fusion of contemporary
+                  comforts alongside the historical significance that defines
+                  these remarkable locations.
+                </p>
+              </div>
+            </div>
+
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+                <p class="destination-description">
+                  <!-- GPT6 -->
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  dolore libero est fuga deserunt porro dolores saepe quod
+                  impedit! Iste molestias libero quas! Deserunt iste harum
+                  voluptatem minima hic aperiam!
+                </p>
+              </div>
+            </div>
+
+            <div class="destination-img-box">
+              <div class="destination-img-url" role="img"></div>
+              <div class="text">
+                <p class="destination-text">Executive office, San Diego</p>
+                <div class="destination-address">
+                  <ion-icon name="location-outline" class="icon"></ion-icon>
+                  <p class="destination-location">
+                    90071, South Grand Avenue,San Diego
+                  </p>
+                </div>
+                <p class="destination-description">
+                  <!-- GPT6 -->
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                  dolore libero est fuga deserunt porro dolores saepe quod
+                  impedit! Iste molestias libero quas! Deserunt iste harum
+                  voluptatem minima hic aperiam!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section--3" class="about-section">
+          <div class="container center-text">
+            <h2 class="heading-secondary">
+              We Help Build on your <br />
+              Past and prepare for the Freature
+            </h2>
+          </div>
+
+          <div class="container steps-box margin-bottom-md">
+            <ul class="steps-list">
+              <li class="step-item active">
+                <a href="" class="step-link">Misson</a>
               </li>
-              <li>
-                <ion-icon
-                  class="check-mark"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Convenient lifestyle upgrades for your well-being</span>
+              <li class="step-item">
+                <a href="" class="step-link">Vission</a>
               </li>
-              <li>
-                <ion-icon
-                  class="check-mark"
-                  name="checkmark-outline"
-                ></ion-icon>
-                <span>Personalized services for a healthier you</span>
+              <li class="step-item">
+                <a href="" class="step-link">Value</a>
+              </li>
+              <li class="step-item">
+                <a href="" class="step-link">Award winning</a>
               </li>
             </ul>
-            <button class="btn btn--full">More about us</button>
-          </div>
-          <div class="experience-images-box grid grid--3--cols grid-gap-sm">
-            <div class="img-box">
-              <div class="experience-img-url"></div>
-            </div>
-            <div class="img-box">
-              <div class="experience-img-url"></div>
-            </div>
-            <div class="img-box">
-              <div class="experience-img-url"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="destination" class="destinations-section">
-        <div class="container destination-tilte-box margin-bottom-md">
-          <h2 class="heading-secondary margin-bottom-0">
-            Destination we love the most
-          </h2>
-
-          <div class="next-btn-box">
-            <button class="btn btn--option margin-right-sm">&LeftArrow;</button>
-            <button class="btn btn--option">&RightArrow;</button>
-          </div>
-        </div>
-
-        <div class="destination-grid container grid grid--3--cols">
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-              <p class="destination-description">
-                Discover the fusion of contemporary comforts alongside the
-                historical significance that defines these remarkable locations.
-                Your exploration awaits in our diverse destinations.
-              </p>
-            </div>
           </div>
 
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-
-              <p class="destination-description">
-                Delve into our recommended destinations and discover their
-                unique charm. Each location is a hidden gem, waiting to be
-                explored, offering a blend of culture, comfort, and unparalleled
-                experiences.
-              </p>
-            </div>
-          </div>
-
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-              <p class="destination-description">
-                Experience the allure of our highly recommended locations where
-                modern comforts and vibrant energy converge. Unwind and enjoy
-                the perfect blend of relaxation and urban lifestyle in these
-                handpicked destinations.
-              </p>
-            </div>
-          </div>
-
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-              <p class="destination-description">
-                Your exploration awaits in our diverse destinations, blending
-                modernity with heritage. Discover the fusion of contemporary
-                comforts alongside the historical significance that defines
-                these remarkable locations.
-              </p>
-            </div>
-          </div>
-
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-              <p class="destination-description">
-                <!-- GPT6 -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                dolore libero est fuga deserunt porro dolores saepe quod
-                impedit! Iste molestias libero quas! Deserunt iste harum
-                voluptatem minima hic aperiam!
-              </p>
-            </div>
-          </div>
-
-          <div class="destination-img-box">
-            <div class="destination-img-url" role="img"></div>
-            <div class="text">
-              <p class="destination-text">Executive office, San Diego</p>
-              <div class="destination-address">
-                <ion-icon name="location-outline" class="icon"></ion-icon>
-                <p class="destination-location">
-                  90071, South Grand Avenue,San Diego
-                </p>
-              </div>
-              <p class="destination-description">
-                <!-- GPT6 -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                dolore libero est fuga deserunt porro dolores saepe quod
-                impedit! Iste molestias libero quas! Deserunt iste harum
-                voluptatem minima hic aperiam!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-section">
-        <div class="container center-text">
-          <h2 class="heading-secondary">
-            We Help Build on your <br />
-            Past and prepare for the Freature
-          </h2>
-        </div>
-
-        <div class="container steps-box margin-bottom-md">
-          <ul class="steps-list">
-            <li class="step-item active">
-              <a href="" class="step-link">Misson</a>
-            </li>
-            <li class="step-item">
-              <a href="" class="step-link">Vission</a>
-            </li>
-            <li class="step-item">
-              <a href="" class="step-link">Value</a>
-            </li>
-            <li class="step-item">
-              <a href="" class="step-link">Award winning</a>
-            </li>
-          </ul>
-        </div>
-
-        <div id="commitment" class="container grid grid--2--cols">
-          <div class="about-content">
-            <h3 class="heading-tertiary">Pioneering Quality Construction</h3>
-            <p class="about-description">
-              With an unwavering commitment to quality and excellence, we lead
-              the way in building the future. Our focus is on setting benchmarks
-              that redefine the standards in construction and civil engineering.
-            </p>
-            <div class="about-list-box">
-              <ul class="about-list">
-                <li class="about-item">
-                  <span><strong> Commercial </strong></span>
-                </li>
-                <li class="about-item">
-                  <span><strong> Commercial </strong></span>
-                </li>
-              </ul>
-              <ul class="about-list">
-                <li class="about-item">
-                  <span><strong> Commercial </strong></span>
-                </li>
-                <li class="about-item">
-                  <span><strong> Commercial </strong></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="about-video-box">
-            <video class="my-video video-js" data-setup="" controls>
-              <source
-                src="./assets/video/meeting-1280-720.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </div>
-      </section>
-
-      <section id="clients" class="testimonials-section">
-        <div
-          class="container center-text testimonials-tilte-box margin-bottom-md"
-        >
-          <h2 class="heading-secondary margin-bottom-0">
-            What out past client say about us
-          </h2>
-
-          <div class="next-btn-box">
-            <button class="btn btn--option margin-right-sm">&LeftArrow;</button>
-            <button class="btn btn--option">&RightArrow;</button>
-          </div>
-        </div>
-
-        <div class="groded">
           <div
-            class="container grid grid--1-2--cols testimonials grid-center-v"
+            id="commitment"
+            class="container grid grid--2--cols section--reveal"
           >
-            <div class="testimonials-img-box">
-              <img
-                src="./assets/images/apartment.jpg"
-                alt=""
-                class="testimonials-img"
-              />
+            <div class="about-content">
+              <h3 class="heading-tertiary">Pioneering Quality Construction</h3>
+              <p class="about-description">
+                With an unwavering commitment to quality and excellence, we lead
+                the way in building the future. Our focus is on setting
+                benchmarks that redefine the standards in construction and civil
+                engineering.
+              </p>
+              <div class="about-list-box">
+                <ul class="about-list">
+                  <li class="about-item">
+                    <span><strong> Commercial </strong></span>
+                  </li>
+                  <li class="about-item">
+                    <span><strong> Commercial </strong></span>
+                  </li>
+                </ul>
+                <ul class="about-list">
+                  <li class="about-item">
+                    <span><strong> Commercial </strong></span>
+                  </li>
+                  <li class="about-item">
+                    <span><strong> Commercial </strong></span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <div class="testimonials-content-box">
-              <ul class="rating-box">
-                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
-                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
-                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
-                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
-                <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
-              </ul>
-
-              <p class="testimonial-heading">
-                "Homefy helped us find an amazing house fir our family"
-              </p>
-              <p class="testimonial-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Praesentium, aperiam, magni, dignissimos quibusdam hic deleniti
-                illum nam voluptate perspiciatis ea numquam optio culpa eveniet
-                quisquam. Odit placeat nulla obcaecati labore!
-              </p>
-
-              <div class="testimonial-author-box">
-                <img
-                  src="./assets/images/person-400.jpg"
-                  class="author-photo"
-                  alt=""
+            <div class="about-video-box">
+              <video class="my-video video-js" data-setup="" controls>
+                <source
+                  src="./assets/video/meeting-1280-720.mp4"
+                  type="video/mp4"
                 />
-                <div class="author-info">
-                  <p class="author-name">Mila Mcsabou</p>
-                  <p class="author-job">Freelance Designer</p>
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section id="section--4" class="testimonials-section">
+          <div
+            class="container center-text testimonials-tilte-box margin-bottom-md"
+          >
+            <h2 class="heading-secondary margin-bottom-0">
+              What out past client say about us
+            </h2>
+
+            <div class="next-btn-box">
+              <button class="btn btn--option margin-right-sm">
+                &LeftArrow;
+              </button>
+              <button class="btn btn--option">&RightArrow;</button>
+            </div>
+          </div>
+
+          <div class="groded">
+            <div
+              class="container grid grid--1-2--cols testimonials grid-center-v section--reveal"
+            >
+              <div class="testimonials-img-box">
+                <img
+                  src="./assets/images/apartment.jpg"
+                  alt=""
+                  class="testimonials-img"
+                />
+              </div>
+
+              <div class="testimonials-content-box">
+                <ul class="rating-box">
+                  <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                  <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                  <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                  <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                  <li><ion-icon name="star" class="rating-icon"></ion-icon></li>
+                </ul>
+
+                <p class="testimonial-heading">
+                  "Homefy helped us find an amazing house fir our family"
+                </p>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Praesentium, aperiam, magni, dignissimos quibusdam hic
+                  deleniti illum nam voluptate perspiciatis ea numquam optio
+                  culpa eveniet quisquam. Odit placeat nulla obcaecati labore!
+                </p>
+
+                <div class="testimonial-author-box">
+                  <img
+                    src="./assets/images/person-400.jpg"
+                    class="author-photo"
+                    alt=""
+                  />
+                  <div class="author-info">
+                    <p class="author-name">Mila Mcsabou</p>
+                    <p class="author-job">Freelance Designer</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <div class="container grid grid--5--cols">
         <div class="logo-col">
@@ -478,7 +492,5 @@
         </p>
       </div>
     </footer>
-
-    <script src="app.js"></script>
   </body>
 </html>
