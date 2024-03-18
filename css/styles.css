@@ -1,5 +1,5 @@
 /* NAVIGATION */
-.header {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +73,7 @@ svg {
 }
 /* STICKY NAVIGATION */
 
-.sticky .header {
+.sticky .header-nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -151,21 +151,53 @@ main {
 .prove-item p {
   font-size: 1.4rem;
 }
-header {
+.header-section {
   height: 100vh;
-  color: #fff;
-
-  /* background-blend-mode: darken; */
-
-  /*! SECOND METHOD */
-  background-image: linear-gradient(
-      to left,
-      rgba(3, 23, 58, 0),
-      rgba(3, 23, 58, 0.925)
-    ),
-    url("../assets/images/hero-img.webp");
+  width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  animation: animate 18s ease-in-out infinite alternate-reverse forwards;
+}
+
+@keyframes animate {
+  0%,
+  25% {
+    background-image: linear-gradient(
+        to left,
+        rgba(3, 23, 58, 0),
+        rgba(3, 23, 58, 0.925)
+      ),
+      url("../assets/images/hero-3.jpg");
+  }
+  25.01%,
+  50% {
+    background-image: linear-gradient(
+        to left,
+        rgba(3, 23, 58, 0),
+        rgba(3, 23, 58, 0.925)
+      ),
+      url("../assets/images/hero-2.jpg");
+  }
+  50.01%,
+  75% {
+    background-image: linear-gradient(
+        to left,
+        rgba(3, 23, 58, 0),
+        rgba(3, 23, 58, 0.925)
+      ),
+      url("../assets/images/hero-1.jpg");
+  }
+  75.01%,
+  100% {
+    background-image: linear-gradient(
+        to left,
+        rgba(3, 23, 58, 0),
+        rgba(3, 23, 58, 0.925)
+      ),
+      url("../assets/images/hero-3.jpg");
+  }
 }
 
 /* *********** */

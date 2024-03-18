@@ -15,7 +15,7 @@ import { ob } from "./intersectionObserver.js";
 //ON: .header
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+const headerEl = document.querySelector(".header-nav");
 
 btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
