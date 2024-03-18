@@ -176,3 +176,152 @@ const sliderCreator = function () {
   });
 };
 sliderCreator();
+
+const cards = [
+  {
+    src: "./assets/images/indoor1.webp",
+    price: "521.52",
+    title: "COVA Home Realty",
+    address: "1901 Thornridge Cir.Shilo, Hawai 87410",
+    bedNum: "3",
+    bathNum: "2",
+    sqftNum: "1432",
+  },
+  {
+    src: "./assets/images/indoor2.webp",
+    price: "635.25",
+    title: "Sunnyvale Dream House",
+    address: "1234 Sunflower Lane, Sunnyvale, CA 94086",
+    bedNum: "4",
+    bathNum: "3",
+    sqftNum: "1875",
+  },
+  {
+    src: "./assets/images/indoor3.webp",
+    price: "799.99",
+    title: "Oceanview Retreat",
+    address: "555 Coastal Highway, Malibu, CA 90265",
+    bedNum: "2",
+    bathNum: "2",
+    sqftNum: "1200",
+  },
+  {
+    src: "./assets/images/indoor4.webp",
+    price: "899.50",
+    title: "Lakefront Cabin",
+    address: "789 Pine Street, Big Bear Lake, CA 92315",
+    bedNum: "1",
+    bathNum: "1",
+    sqftNum: "800",
+  },
+  {
+    src: "./assets/images/indoor5.webp",
+    price: "749.75",
+    title: "Mountain View Retreat",
+    address: "4321 Evergreen Drive, Boulder, CO 80302",
+    bedNum: "3",
+    bathNum: "2.5",
+    sqftNum: "1600",
+  },
+  {
+    src: "./assets/images/indoor6.webp",
+    price: "1125.00",
+    title: "Luxury Penthouse",
+    address: "1001 Skyline Avenue, Manhattan, NY 10001",
+    bedNum: "5",
+    bathNum: "4",
+    sqftNum: "2800",
+  },
+
+  {
+    src: "./assets/images/indoor7.webp",
+    price: "899.99",
+    title: "Seaside Bungalow",
+    address: "123 Beachfront Road, Santa Monica, CA 90401",
+    bedNum: "2",
+    bathNum: "2",
+    sqftNum: "1100",
+  },
+  {
+    src: "./assets/images/indoor8.webp",
+    price: "1200.00",
+    title: "Urban Loft Living",
+    address: "789 Metropolitan Avenue, Brooklyn, NY 11211",
+    bedNum: "1",
+    bathNum: "1",
+    sqftNum: "900",
+  },
+];
+const destinationContainer = document.querySelector(".destination-grid");
+
+let html = "";
+cards.forEach((card) => {
+  html += `
+  <div class="card">
+  <div class="card-img-container">
+    <figure>
+      <img
+        class="img-cover"
+        src="${card.src}"
+        alt=""
+      />
+    </figure>
+  
+    <button
+      class="icon-btn fav-btn"
+      aria-label="add to favorite"
+      data-toggle-btn
+    >
+      <i
+        class="bx bx-heart material-symbols-rounded"
+        aria-hidden="true"
+      ></i>
+    </button>
+  </div>
+  <div class="card-text-container">
+    <p class="card-elm card-price">$${card.price}</p>
+    <p class="card-elm card-title">${card.title}</p>
+    <address class="card-elm card-address">
+      ${card.address}
+    </address>
+  
+    <div class="card-footer">
+      <div class="card-icons">
+        <div class="card-icon bed">
+          <span class="icon-f"
+            ><i class="bx bx-bed bx-flip-horizontal"></i
+          ></span>
+          <span> ${card.bedNum} Bed</span>
+        </div>
+        <div class="card-icon bath">
+          <span class="icon-f"><i class="bx bx-bath"></i></span>
+          <span>${card.bathNum} Bath</span>
+        </div>
+        <div class="card-icon sqr">
+          <span class="icon-f"
+            ><i class="bx bx-ruler bx-flip-horizontal"></i
+          ></span>
+          <span>${card.sqftNum} sqft</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  `;
+});
+destinationContainer.insertAdjacentHTML("beforeend", html);
+
+// Add to favorite button toggle
+// Add to favorite button toggle
+const toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+
+toggleBtns.forEach((toggleBtn) => {
+  toggleBtn.addEventListener("click", () => {
+    toggleBtn.classList.toggle("active");
+    const heartIcon = toggleBtn.querySelector("i");
+    toggleBtn.classList.contains("active")
+      ? heartIcon.classList.replace("bx-heart", "bxs-heart")
+      : heartIcon.classList.replace("bxs-heart", "bx-heart");
+  });
+});
